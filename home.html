@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primes</title>
+  <link rel="logo" type="image" href="pics/removed bg logo.png">
+  <style>
+    /* Internal CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      width: 100%;
+      
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background-color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      transition: 0.3s ease ;
+    }
+
+    nav ul li a:hover{
+      border-bottom: 3px solid #ff8303;
+      transform: scale(1.5px);
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+    }
+
+    .content {
+      width: 50%;
+      padding: 20px;
+    }
+
+    .content h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .content .btn {
+      background-color: #ff8303;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      font-family: "Patua One", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .image {
+      width: 100%;
+      text-align: center;
+    }
+
+    .image img {
+      max-width: 300%;
+      border-radius: 50%;
+      border: 10px solid orange;
+
+    }
+    footer{
+       
+      text-decoration: none; 
+      color: #000000;
+      background-color: #f8f9fa; 
+      padding: 10px; 
+      text-align: center; 
+      font-family: Arial, sans-serif;
+    }
+    footer  h5 {
+    
+    text-align: center;
+    color: rgb(0, 0, 0);
+    }
+    footer a{
+        text-decoration: none;
+    
+    }
+    .social-media{
+      margin: 0 10px; 
+      text-decoration: none; 
+      color: #000000;
+    }
+    .body-text{
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+    }
+    .body-content {
+  font-family: "Crimson Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+
+    }
+    #scrollUpBtn {
+            position:fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(to top left, lightcoral 20%, orange 80%);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        #scrollUpBtn:hover {
+            background-color: #0056b3;
+        }
+        .contents {
+            line-height: 1.6;
+            max-height: 100px;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .contents.expanded {
+            max-height: none; /* Allow full content visibility */
+        }
+
+        .see-more {
+            display: block;
+            margin-top: 10px;
+            color: #007bff;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .see-more:hover {
+            text-decoration: underline;
+        }
+        th, td {
+            
+            align-content: center;
+            width: 50%;
+        }
+        table {
+            width: 100%;
+          
+          border-collapse: collapse;
+        }
+        
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="brand" id="brand"><a href="home.html"><img src="pics/etup brand.jpg" width="130" height="80" align="center"></a></h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="service.html">Menu</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="content">
+      <h1 class="body-text">PRIMES</h1>
+      <div class="body-content"><p>          offers a taste of our very own authentic Japanese cuisine. Prepare your chopsticks and allow your stomach and taste buds to be taken to the center of Japan. Enjoy your weekend by dropping by at Primes - Villa De Calamba. Made with fresh ingredients and love, we serve a taste you'll keep coming back for! Savor the flavors of Japan that will tantalize your taste buds and feed your cravings with the best Japanese dishes around. Get your chopsticks ready and head over to Primes.</p></div>
+      <a href="service.html" class="btn">Order Now!</a>
+    </div>
+    <div class="image">
+      <a href="service.html"><img src="primes img/primeshomepage.gif" alt="Takoyaki"></a>
+    </div>
+  </div>
+  
+</body>
+<footer>
+  <footer>
+    <table>
+  <td>
+    Refund policy</br>
+    <div class="contents" id="contents">
+<br>At Primes takoyaki., we take great pride in the quality of our products and inspect them thoroughly before delivering them to our customers.</br>
+
+If you decide for any reason that you would like to return an item from your order, it must arrive at our store within 30 minutes of purchase. The product must be unopened and in its original packaging. We cannot accept returns of any item that has been opened. Please indicate the order number and the date and time your order was placed on your return.
+ When the item to be returned arrives at our store, we will inspect it to ascertain its quality. You will be refunded the cost of the product minus the delivery cost.
+Please send returns directly to our main store: Villa de calamba primes store
+
+ 
+Please feel free to contact us at any time should you have any questions or concerns. Any inquiries may be directed at primes@gmail.com or contact us +639309315661.</div>
+<span class="see-more" id="seeMoreLink">See More</span>
+    </div>
+</td>
+  
+    <td><div class="right" style="margin-bottom: 10px;">
+        <a href="takoyaki proj html.html">About Us</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="company name" style="margin-bottom: 10px;">
+        <p style="margin: 0;">&copy; 2024 City College of Calamba. All rights reserved.</p>
+    </div>
+    <div class="social-media">
+        <a href="https://www.facebook.com/primescalambamain" target="_blank" >Facebook</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </div></td></table>
+</footer>
+  <a href="our teams.html"><h5>Developed by</h5></a>
+
+</footer>
+<button id="scrollUpBtn" title="Scroll to top">⮙</button>
+<script>
+ // for scroll up button
+  const scrollUpBtn = document.getElementById('scrollUpBtn');
+
+  
+  window.onscroll = function () {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          scrollUpBtn.style.display = 'flex';
+      } else {
+          scrollUpBtn.style.display = 'none';
+      }
+  };
+
+  
+  scrollUpBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+    //see more code
+   
+    const contents = document.getElementById('contents');
+        const seeMoreLink = document.getElementById('seeMoreLink');
+
+        seeMoreLink.addEventListener('click', () => {
+            contents.classList.toggle('expanded');
+            seeMoreLink.textContent = contents.classList.contains('expanded') ? 'See Less' : 'See More';
+        });
+</script>
+</html>

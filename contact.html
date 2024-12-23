@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primes</title>
+  <style>
+    /* Internal CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.9);
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+      color: #333;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 18px;
+      transition: ease 0.3s;
+    }
+    nav ul li a:hover{
+      border-bottom: 3px solid #ff8303;
+    }
+
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .content {
+      display: flex;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .image {
+      margin-right: 20px;
+    }
+
+    .image img {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      background-color: #ffe1c4;
+    }
+
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .text-content .item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .text-content .item img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .text-content .item span {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .text-content .item p {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+    footer{
+       
+       text-decoration: none; 
+       color: #000000;
+       background-color: #f8f9fa; 
+       padding: 10px; 
+       text-align: center; 
+       font-family: Arial, sans-serif;
+     }
+     footer  h5 {
+     
+     text-align: center;
+     color: rgb(0, 0, 0);
+     }
+     footer a{
+         text-decoration: none;
+     
+     }
+     .social-media{
+       margin: 0 10px; 
+       text-decoration: none; 
+       color: #000000;
+     }
+     .body-text{
+   font-family: "Patua One", serif;
+   font-weight: 400;
+   font-style: normal;
+     }
+     .body-content {
+   font-family: "Crimson Pro", serif;
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
+ 
+     }
+     #scrollUpBtn {
+             position:fixed;
+             bottom: 20px;
+             right: 20px;
+             background: linear-gradient(to top left, lightcoral 20%, orange 80%);
+             color: white;
+             border: none;
+             border-radius: 50%;
+             width: 50px;
+             height: 50px;
+             display: none;
+             justify-content: center;
+             align-items: center;
+             cursor: pointer;
+             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+             
+         }
+ 
+         #scrollUpBtn:hover {
+             background-color: #0056b3;
+         }
+         .contents {
+             line-height: 1.6;
+             max-height: 100px;
+             overflow: hidden;
+             transition: max-height 0.3s ease;
+         }
+ 
+         .contents.expanded {
+             max-height: none; /* Allow full content visibility */
+         }
+ 
+         .see-more {
+             display: block;
+             margin-top: 10px;
+             color: #007bff;
+             cursor: pointer;
+             text-align: center;
+         }
+ 
+         .see-more:hover {
+             text-decoration: underline;
+         }
+         th, td {
+             
+             align-content: center;
+             width: 50%;
+         }
+         table {
+             width: 100%;
+           
+           border-collapse: collapse;
+         }
+         
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="home.html"><img src="pics/etup brand.jpg" width="130" height="80" align="center"></a></h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="service.html">Menu</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="content">
+      <div class="image">
+        <a href="https://www.google.com/maps/place/Primes+-+Villa+De+Calamba/@14.1905055,121.1565802,17z/data=!3m1!4b1!4m6!3m5!1s0x33bd6300352bb0ed:0xa7a1021ad591f2ff!8m2!3d14.1905003!4d121.1591551!16s%2Fg%2F11vspdrm_z?entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D"><img src="pics/loc.png" alt="Placeholder Image"> </a>
+      </div>
+      <div class="text-content">
+        <div class="item">
+         <img src="ICons/facebook.png" alt="Icon">
+          <div>
+            <a href="https://www.facebook.com/primescalambamain"><span>Facebook</span></a>
+            <p>"Primes - Calamba Main"</p>
+          </div> </a>
+        </div>
+        <div class="item">
+          <img src="ICons/instagram.png" alt="Icon">
+          <div>
+            <span>Instagram</span>
+            <p>"Primes - Calamba Main"</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="ICons/gmail.png" alt="Icon">
+          <div>
+            <span>Gmail</span>
+            <p>"primes@gmail.com"</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <footer>
+  <table>
+<td>
+  Refund policy</br>
+  <div class="contents" id="contents">
+<br>At Primes takoyaki., we take great pride in the quality of our products and inspect them thoroughly before delivering them to our customers.</br>
+
+If you decide for any reason that you would like to return an item from your order, it must arrive at our store within 30 minutes of purchase. The product must be unopened and in its original packaging. We cannot accept returns of any item that has been opened. Please indicate the order number and the date and time your order was placed on your return.
+When the item to be returned arrives at our store, we will inspect it to ascertain its quality. You will be refunded the cost of the product minus the delivery cost.
+Please send returns directly to our main store: Villa de calamba primes store
+
+
+Please feel free to contact us at any time should you have any questions or concerns. Any inquiries may be directed at primes@gmail.com or contact us +639309315661.</div>
+<span class="see-more" id="seeMoreLink">See More</span>
+  </div>
+</td>
+
+  <td><div class="right" style="margin-bottom: 10px;">
+      <a href="takoyaki proj html.html">About Us</a>
+      <a href="service.html">Services</a>
+      <a href="contact.html">Contact</a>
+      
+  </div>
+  <div class="company name" style="margin-bottom: 10px;">
+      <p style="margin: 0;">&copy; 2024 City College of Calamba. All rights reserved.</p>
+  </div>
+  <div class="social-media">
+      <a href="https://www.facebook.com/primescalambamain" target="_blank" >Facebook</a>
+      <a href="https://www.twitter.com" target="_blank">Twitter</a>
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+  </div></td></table>
+</footer>
+<a href="our teams.html"><h5>Developed by</h5></a>
+
+</footer>
+<button id="scrollUpBtn" title="Scroll to top">⮙</button>
+<script>
+// for scroll up button
+const scrollUpBtn = document.getElementById('scrollUpBtn');
+
+
+window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollUpBtn.style.display = 'flex';
+    } else {
+        scrollUpBtn.style.display = 'none';
+    }
+};
+
+
+scrollUpBtn.onclick = function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+  //see more code
+ 
+  const contents = document.getElementById('contents');
+      const seeMoreLink = document.getElementById('seeMoreLink');
+
+      seeMoreLink.addEventListener('click', () => {
+          contents.classList.toggle('expanded');
+          seeMoreLink.textContent = contents.classList.contains('expanded') ? 'See Less' : 'See More';
+      });
+</script>
+</html>
